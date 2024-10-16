@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: sms_db_dumper
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: "******"
+    password: "******"
+  jpa:
+    hibernate:
+      ddl-auto: create
+  data:
+   redis:
+    host: localhost
+    port: 6370
+server:
+  port: 8083
+  address: 10.1.22.176
+
+
+
+
+
+

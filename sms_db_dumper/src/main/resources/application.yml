@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: sms_db_dumper
+  datasource:
+    url: jdbc:oracle:thin:@10.1.7.4:1521:xe
+    username: anbesaprod
+    password: sMsPass0rd
+  jpa:
+    hibernate:
+      ddl-auto: update
+  data:
+   redis:
+    host: localhost
+    port: 6370
+server:
+  port: 8083
+  address: 10.1.7.4
+
+
+
+
+
+#spring.application.name=sms_db_dumper
+#server.port=8083
+#server.address=10.1.22.176
+#spring.data.redis.host=localhost
+#spring.data.redis.port=6379
+#
+#spring.datasource.url=jdbc:oracle:thin:@orclpdb:1521:orcl
+#spring.datasource.username=system
+#spring.datasource.password=oracle
+#spring.jpa.hibernate.ddl-auto=create
+#spring.datasource.url=jdbc:postgresql://localhost:5432/sms_dump
+#spring.datasource.username=postgres
+#spring.datasource.password=Absent@1234
+#spring.jpa.hibernate.ddl-auto=update
+# Uncomment to see SQL in console
+# spring.jpa.show-sql=true
+# spring.jpa.properties.hibernate.format_sql=true
